@@ -1,18 +1,715 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="ReviewPoint — честная обратная связь для развития бизнеса.">
-<title>ReviewPoint — голос клиентов</title>
-<style>
-:root{--navy:#101c35;--blue:#3978f6;--ink:#17233b;--muted:#66738a;--bg:#f5f7fb;--line:#e5eaf2}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);line-height:1.6}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 40px));margin:auto}header{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:5}.nav{height:74px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:10px;font-weight:800;font-size:20px}.logo{width:38px;height:38px;border-radius:12px;background:var(--blue);display:grid;place-items:center;color:#fff;font-weight:900}.navlinks{display:flex;gap:24px;color:#536078;font-size:14px}.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--blue);color:#fff;padding:12px 20px;border-radius:10px;font-weight:700;font-size:14px}.btn:hover{background:#2866e8}.hero{background:radial-gradient(circle at 85% 20%,#294a83 0,transparent 34%),linear-gradient(125deg,#101c35,#172c50);color:white;padding:85px 0}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}.eyebrow{color:#9ebdff;text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:800}.hero h1{font-size:clamp(38px,5.4vw,62px);line-height:1.08;letter-spacing:-2px;margin:17px 0}.hero p{color:#cbd6e8;max-width:570px;font-size:18px;margin:0 0 28px}.hero .btn{background:white;color:#18315a}.note{font-size:12px;color:#b6c4da;margin-top:15px}.preview{background:#fff;color:var(--ink);padding:23px;border-radius:20px;box-shadow:0 25px 70px #07152c66}.preview h3{margin:0}.review{border:1px solid var(--line);border-radius:12px;padding:14px;margin:12px 0}.stars{color:#f3ae32;letter-spacing:2px}.review small{color:var(--muted)}section{padding:75px 0}.head{text-align:center;max-width:680px;margin:0 auto 40px}.head .eyebrow{color:var(--blue)}h2{font-size:clamp(29px,4vw,40px);line-height:1.2;letter-spacing:-1px;margin:12px 0}.muted,.head p{color:var(--muted)}.cards,.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card,.step{border:1px solid var(--line);border-radius:16px;padding:24px;background:#fff}.ico{width:44px;height:44px;border-radius:12px;background:#edf3ff;color:var(--blue);display:grid;place-items:center;font-size:21px;font-weight:800}.card h3{margin:16px 0 7px}.card p,.step p{color:var(--muted);font-size:14px;margin:0}.soft{background:var(--bg)}.num{font-size:13px;font-weight:800;color:var(--blue);letter-spacing:1px}.about{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}.panel{background:var(--navy);color:#fff;border-radius:18px;padding:32px}.panel p{color:#cbd6e8}.faq{max-width:780px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:18px 2px}.faq summary{font-weight:700;cursor:pointer}.faq details p{color:var(--muted);margin-bottom:0}.contact{background:var(--navy);color:white;text-align:center;padding:68px 0}.contact p{color:#cbd6e8;max-width:600px;margin:12px auto 25px}.contact .btn{background:white;color:var(--navy)}footer{padding:24px 0;color:var(--muted);font-size:13px}.foot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}@media(max-width:800px){.navlinks{display:none}.hero{padding:58px 0}.hero-grid,.about{grid-template-columns:1fr}.cards,.steps{grid-template-columns:1fr}section{padding:55px 0}}
-</style></head><body>
-<header><div class="wrap nav"><a class="brand" href="#top"><span class="logo">R</span>ReviewPoint</a><nav class="navlinks"><a href="#about">О нас</a><a href="#services">Направления</a><a href="#process">Как работаем</a><a href="#vacancies">Вакансии</a><a href="#faq">FAQ</a></nav><a class="btn" href="#contact">Связаться</a></div></header>
-<main id="top"><section class="hero"><div class="wrap hero-grid"><div><div class="eyebrow">Обратная связь, которая помогает расти</div><h1>Слушаем клиентов.<br>Помогаем бизнесу.</h1><p>ReviewPoint помогает компаниям собирать настоящие мнения клиентов, лучше понимать их опыт и находить точки роста.</p><a class="btn" href="#contact">Обсудить сотрудничество</a><div class="note">Работаем с реальной обратной связью — без вымышленных отзывов и оценок.</div></div><div class="preview"><h3>Обратная связь</h3><div class="review"><div class="stars">★★★★★</div><b>Понятный процесс</b><br><small>Пример отображения клиентской оценки</small></div><div class="review"><b>Что можно улучшить?</b><br><small>Собирайте предложения и комментарии клиентов</small></div><div class="review"><b>Результат — в понимании клиента</b><br><small>Анализируйте обратную связь и принимайте решения</small></div></div></div></section>
-<section id="about"><div class="wrap about"><div><div class="eyebrow" style="color:var(--blue)">О проекте</div><h2>Мнение каждого клиента имеет значение</h2><p class="muted">ReviewPoint — проект о честной обратной связи. Мы помогаем организовать сбор отзывов от людей, которые действительно воспользовались товаром или услугой, и структурировать полученные ответы.</p><p class="muted">Наша цель — помогать бизнесу замечать сильные стороны и улучшать сервис на основе реального опыта.</p></div><div class="panel"><h3>Доверие начинается с честности</h3><p>Публикуются только подлинные мнения авторов. Никаких фиктивных аккаунтов, заказных оценок или обещаний гарантированного рейтинга.</p></div></div></section>
-<section class="soft" id="services"><div class="wrap"><div class="head"><div class="eyebrow">Направления</div><h2>Чем мы можем быть полезны</h2><p>Практичные инструменты для работы с клиентским мнением.</p></div><div class="cards"><article class="card"><div class="ico">✎</div><h3>Сбор отзывов</h3><p>Организация удобного сбора мнений от реальных покупателей и пользователей услуг.</p></article><article class="card"><div class="ico">⌕</div><h3>Анализ обратной связи</h3><p>Группировка комментариев, выявление повторяющихся вопросов и предложений.</p></article><article class="card"><div class="ico">↗</div><h3>Улучшение сервиса</h3><p>Поиск направлений для улучшения на основе мнений клиентов.</p></article></div></div></section>
-<section id="process"><div class="wrap"><div class="head"><div class="eyebrow">Процесс</div><h2>Как строится работа</h2><p>Прозрачно, последовательно и с уважением к мнению каждого участника.</p></div><div class="steps"><div class="step"><div class="num">ШАГ 01</div><h3>Знакомство с задачей</h3><p>Определяем, какую обратную связь хочет получить компания.</p></div><div class="step"><div class="num">ШАГ 02</div><h3>Сбор мнений</h3><p>Приглашаем реальных клиентов поделиться собственным опытом.</p></div><div class="step"><div class="num">ШАГ 03</div><h3>Передача результатов</h3><p>Систематизируем ответы и передаём компании честную обратную связь.</p></div></div></div></section>
-<section class="soft" id="vacancies"><div class="wrap about"><div><div class="eyebrow" style="color:var(--blue)">Вакансии</div><h2>Станьте частью проекта</h2><p class="muted">Нам интересны внимательные и ответственные люди, которым важно качество клиентского опыта.</p><p class="muted">Условия, задачи и формат сотрудничества обсуждаются индивидуально и заранее.</p><a class="btn" href="#contact">Узнать подробнее</a></div><div class="panel"><h3>Открытость и понятные условия</h3><p>Перед началом любой работы участник получает описание задач, требований и условий. Не просим публиковать вымышленные отзывы или выдавать чужой опыт за свой.</p></div></div></section>
-<section id="faq"><div class="wrap"><div class="head"><div class="eyebrow">FAQ</div><h2>Часто задаваемые вопросы</h2></div><div class="faq"><details><summary>Какие отзывы можно собирать?</summary><p>Только реальные мнения людей, которые действительно приобрели товар или воспользовались услугой.</p></details><details><summary>Можно ли гарантировать положительные оценки?</summary><p>Нет. Отзывы должны отражать настоящий опыт автора. Нельзя требовать заранее заданную оценку.</p></details><details><summary>Как узнать условия сотрудничества?</summary><p>Напишите нам по контактам, которые владелец сайта добавит в разделе ниже.</p></details></div></div></section>
-<section class="contact" id="contact"><div class="wrap"><div class="eyebrow">Контакты</div><h2>Обсудим вашу задачу?</h2><p>Напишите нам, чтобы обсудить сбор обратной связи и возможный формат сотрудничества.</p><a class="btn" href="mailto:hello@example.com?subject=ReviewPoint%20—%20сотрудничество">Написать на почту</a><div class="note">Перед публикацией замените hello@example.com на свой рабочий адрес.</div></div></section></main>
-<footer><div class="wrap foot"><span>© 2026 ReviewPoint</span><span>Честная обратная связь для развития бизнеса</span></div></footer></body></html>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Инсайт Мнение — Вакансия Специалист по написанию отзывов</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Font Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#0B0F19',
+                            card: '#111827',
+                            accent: '#6366F1',
+                            purple: '#A855F7',
+                            cyan: '#06B6D4',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #07090e;
+            color: #f3f4f6;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(17, 24, 39, 0.75);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+            transition: all 0.3s ease;
+        }
+        .glass-card:hover {
+            border-color: rgba(99, 102, 241, 0.4);
+            box-shadow: 0 12px 40px 0 rgba(99, 102, 241, 0.15);
+            transform: translateY(-2px);
+        }
+        .glow-text {
+            text-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+        }
+        .gradient-bg {
+            background: linear-gradient(135deg, #0b0f19 0%, #1e1b4b 50%, #0b0f19 100%);
+            background-size: 200% 200%;
+            animation: gradientShift 15s ease infinite;
+        }
+        @keyframes gradientShift {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        .accent-gradient {
+            background: linear-gradient(135deg, #6366F1 0%, #A855F7 100%);
+        }
+        .accent-gradient-text {
+            background: linear-gradient(135deg, #818CF8 0%, #C084FC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        
+        /* Animations on scroll */
+        .reveal-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-on-scroll.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased selection:bg-brand-accent selection:text-white">
+
+    <!-- Header -->
+    <header class="sticky top-0 z-50 w-full bg-brand-dark/80 backdrop-blur-md border-b border-white/10">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="w-9 h-9 rounded-lg accent-gradient flex items-center justify-center text-white font-black text-sm shadow-lg shadow-indigo-500/30 group-hover:scale-105 transition-transform">
+                    <i class="fa-solid fa-lightbulb"></i>
+                </div>
+                <div class="flex flex-col">
+                    <span class="text-base font-extrabold tracking-tight text-white leading-none">ИНСАЙТ МНЕНИЕ</span>
+                    <span class="text-[10px] font-semibold tracking-wider text-brand-purple uppercase leading-tight mt-0.5">ORM Agency</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center space-x-6 text-xs sm:text-sm font-medium text-gray-300">
+                <a href="#about" class="hover:text-brand-accent transition-colors">О вакансии</a>
+                <a href="#benefits" class="hover:text-brand-accent transition-colors">Условия</a>
+                <a href="#reviews" class="hover:text-brand-accent transition-colors">Отзывы</a>
+                <a href="#calculator" class="hover:text-brand-accent transition-colors">Калькулятор</a>
+                <a href="#contacts" class="hover:text-brand-accent transition-colors">Контакты</a>
+                <a href="#faq" class="hover:text-brand-accent transition-colors">FAQ</a>
+            </nav>
+
+            <div class="hidden md:flex items-center">
+                <a href="#apply" class="px-4 py-2 text-xs font-semibold rounded-lg accent-gradient hover:opacity-90 text-white shadow-lg shadow-indigo-500/25 transition-all transform hover:scale-105">
+                    Подать заявку
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button onclick="toggleMobileMenu()" class="md:hidden text-gray-300 hover:text-white p-2">
+                <i class="fa-solid fa-bars text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-brand-dark/95 border-b border-white/10 px-4 pt-2 pb-5 space-y-2 backdrop-blur-lg">
+            <a href="#about" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-white py-2 text-sm">О вакансии</a>
+            <a href="#benefits" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-white py-2 text-sm">Условия</a>
+            <a href="#reviews" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-white py-2 text-sm">Отзывы сотрудников</a>
+            <a href="#calculator" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-white py-2 text-sm">Калькулятор дохода</a>
+            <a href="#contacts" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-white py-2 text-sm">Контакты</a>
+            <a href="#faq" onclick="toggleMobileMenu()" class="block text-gray-300 hover:text-white py-2 text-sm">FAQ</a>
+            <div class="pt-2">
+                <a href="#apply" onclick="toggleMobileMenu()" class="block text-center py-2.5 text-sm font-semibold rounded-lg accent-gradient text-white">
+                    Отправить анкету
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Hero Section -->
+    <section class="gradient-bg relative py-20 sm:py-28 overflow-hidden border-b border-white/10">
+        <div class="absolute -top-32 left-1/2 -translate-x-1/2 w-96 h-96 bg-brand-accent/20 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="max-w-3xl">
+                <div class="inline-flex items-center space-x-2 px-3 py-1 rounded-full bg-white/5 border border-white/10 text-xs font-medium text-brand-purple mb-6">
+                    <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+                    <span>Удаленная вакансия • Набор 2026</span>
+                </div>
+                
+                <h1 class="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white leading-tight mb-6">
+                    Специалист по написанию отзывов и <span class="accent-gradient-text">ORM-менеджменту</span>
+                </h1>
+                
+                <p class="text-base sm:text-lg text-gray-300 mb-8 leading-relaxed font-light">
+                    Удаленная работа в агентстве репутационного маркетинга «Инсайт Мнение». Формируйте положительный образ брендов, работайте в удобное время и получайте официальные еженедельные выплаты.
+                </p>
+
+                <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                    <a href="#apply" class="px-7 py-4 rounded-xl text-sm font-bold text-center text-white accent-gradient hover:opacity-90 shadow-lg shadow-indigo-500/30 transition-all transform hover:-translate-y-0.5">
+                        Откликнуться на вакансию
+                    </a>
+                    <a href="#calculator" class="px-7 py-4 rounded-xl text-sm font-bold text-center text-gray-200 bg-white/5 hover:bg-white/10 border border-white/10 transition-all">
+                        Рассчитать заработок
+                    </a>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-16 pt-8 border-t border-white/10">
+                <div class="glass-card p-4 rounded-xl flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-indigo-500/10 text-brand-accent flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-laptop-house"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-400">Формат</div>
+                        <div class="text-sm font-bold text-white">100% Удаленно</div>
+                    </div>
+                </div>
+                <div class="glass-card p-4 rounded-xl flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-brand-purple flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-credit-card"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-400">Выплаты</div>
+                        <div class="text-sm font-bold text-white">Раз в неделю</div>
+                    </div>
+                </div>
+                <div class="glass-card p-4 rounded-xl flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-lg bg-cyan-500/10 text-brand-cyan flex items-center justify-center text-lg">
+                        <i class="fa-solid fa-user-clock"></i>
+                    </div>
+                    <div>
+                        <div class="text-xs text-gray-400">Занятость</div>
+                        <div class="text-sm font-bold text-white">Свободный график</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Duties Section -->
+    <section id="about" class="py-20 border-b border-white/10 relative reveal-on-scroll">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center sm:text-left">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-purple">Суть работы</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">Обязанности специалиста</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-brand-accent flex items-center justify-center text-xl font-bold mb-5 border border-indigo-500/30">1</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Анализ карточек товаров</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Изучение специфики заказчика, ключевых плюсов продукта и подготовка логичной структуры отзыва.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-purple-500/20 text-brand-purple flex items-center justify-center text-xl font-bold mb-5 border border-purple-500/30">2</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Написание комментариев</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Создание живых, естественных и грамотных комментариев и оценок на отзовиках, форумах и маркетплейсах.
+                    </p>
+                </div>
+
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="w-12 h-12 rounded-xl bg-cyan-500/20 text-brand-cyan flex items-center justify-center text-xl font-bold mb-5 border border-cyan-500/30">3</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Сдача отчетов в систему</h3>
+                    <p class="text-gray-400 text-sm leading-relaxed">
+                        Фиксация ссылок и скриншотов размещенных отзывов в личном кабинете для автоматического учета выплат.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits & Requirements -->
+    <section id="benefits" class="py-20 border-b border-white/10 bg-brand-dark/50 reveal-on-scroll">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+                <div>
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">Комфортные условия</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1 mb-6">Почему авторы выбирают нас</h2>
+
+                    <div class="space-y-4">
+                        <div class="glass-card p-4 rounded-xl flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-lg bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-sm mt-0.5">
+                                <i class="fa-solid fa-check"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Стабильные еженедельные выплаты</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">Деньги переводятся по понедельникам на карту любого банка без задержек.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-lg bg-indigo-500/20 text-brand-accent flex items-center justify-center text-sm mt-0.5">
+                                <i class="fa-solid fa-graduation-cap"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Обучение и готовые шаблоны</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">Опытный куратор поможет подготовить первые отзывы и пройти адаптацию за 1 день.</p>
+                            </div>
+                        </div>
+
+                        <div class="glass-card p-4 rounded-xl flex items-start space-x-4">
+                            <div class="w-8 h-8 rounded-lg bg-purple-500/20 text-brand-purple flex items-center justify-center text-sm mt-0.5">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+                            <div>
+                                <h4 class="text-base font-bold text-white">Бонусы за продуктивность</h4>
+                                <p class="text-xs text-gray-400 mt-0.5">Повышенные тарифные ставки (до 350 ₽ за текст) для ответственных авторов.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="glass-card p-6 sm:p-8 rounded-2xl relative border-brand-purple/30">
+                    <h3 class="text-xl font-bold text-white mb-6 flex items-center">
+                        <i class="fa-solid fa-list-check text-brand-purple mr-3"></i> Требования к кандидатам
+                    </h3>
+                    <ul class="space-y-4 text-sm text-gray-300">
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-brand-cyan text-base"></i>
+                            <span>Грамотная письменная речь</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-brand-cyan text-base"></i>
+                            <span>Наличие смартфона или компьютера с интернетом</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-brand-cyan text-base"></i>
+                            <span>Умение точно соблюдать техзадание</span>
+                        </li>
+                        <li class="flex items-center space-x-3">
+                            <i class="fa-solid fa-circle-check text-brand-cyan text-base"></i>
+                            <span>Готовность уделять от 2 часов в день</span>
+                        </li>
+                    </ul>
+
+                    <div class="mt-8 pt-6 border-t border-white/10 flex items-center justify-between">
+                        <div>
+                            <span class="text-xs text-gray-400 block">Ставка за 1 отзыв</span>
+                            <span class="text-2xl font-black accent-gradient-text">150 – 350 ₽</span>
+                        </div>
+                        <a href="#apply" class="px-5 py-2.5 text-xs font-bold rounded-lg accent-gradient text-white hover:opacity-90 transition-all">
+                            Откликнуться
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section (2025-2026) -->
+    <section id="reviews" class="py-20 border-b border-white/10 reveal-on-scroll">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-cyan">Истории успеха</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">Отзывы действующей команды</h2>
+                <p class="text-gray-400 text-sm mt-2">Реальный опыт авторов, работающих с «Инсайт Мнение»</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Review 1 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <div class="font-bold text-white text-base">Мария Сергунова</div>
+                                <div class="text-xs text-brand-purple">Копирайтер • В команде с 2025 г.</div>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-300 bg-white/10 px-2.5 py-1 rounded-full border border-white/10">
+                                Октябрь 2026
+                            </span>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            «Работаю из дома, в свободное от семьи время. Привлекло отсутствие сложных жестких начальников — есть ТЗ, берешь задачи и пишешь. Выплаты каждый понедельник стабильно!»
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400">
+                        <span class="text-emerald-400"><i class="fa-solid fa-shield-check mr-1"></i> Выплаты подтверждены</span>
+                        <span class="font-bold text-white">Доход: ~42 000 ₽/мес</span>
+                    </div>
+                </div>
+
+                <!-- Review 2 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <div class="font-bold text-white text-base">Игорь Володин</div>
+                                <div class="text-xs text-brand-accent">ORM-специалист • В команде с 2025 г.</div>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-300 bg-white/10 px-2.5 py-1 rounded-full border border-white/10">
+                                Сентябрь 2026
+                            </span>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            «Сотрудничаю больше года. Задачи распределяются равномерно, куратор всегда на связи в Телеграме. Постепенно подняли ставку до 280 рублей за отзыв.»
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400">
+                        <span class="text-emerald-400"><i class="fa-solid fa-shield-check mr-1"></i> Выплаты подтверждены</span>
+                        <span class="font-bold text-white">Доход: ~65 000 ₽/мес</span>
+                    </div>
+                </div>
+
+                <!-- Review 3 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <div class="font-bold text-white text-base">Наталья Кравцова</div>
+                                <div class="text-xs text-brand-cyan">Автор обзоров • В команде с 2026 г.</div>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-300 bg-white/10 px-2.5 py-1 rounded-full border border-white/10">
+                                Август 2026
+                            </span>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            «Понравился быстрый старт. После отправки анкеты менеджер написал мне в Telegram буквально через пару часов. Обучение простая инструкция, все предельно понятно.»
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400">
+                        <span class="text-emerald-400"><i class="fa-solid fa-shield-check mr-1"></i> Выплаты подтверждены</span>
+                        <span class="font-bold text-white">Доход: ~38 000 ₽/мес</span>
+                    </div>
+                </div>
+
+                <!-- Review 4 -->
+                <div class="glass-card p-6 rounded-2xl flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-start justify-between mb-4">
+                            <div>
+                                <div class="font-bold text-white text-base">Дмитрий А.</div>
+                                <div class="text-xs text-brand-purple">Автор отзывов • В команде с 2025 г.</div>
+                            </div>
+                            <span class="text-[11px] font-semibold text-gray-300 bg-white/10 px-2.5 py-1 rounded-full border border-white/10">
+                                Май 2025
+                            </span>
+                        </div>
+                        <p class="text-gray-300 text-sm leading-relaxed mb-4">
+                            «Отличная подработка по вечерам. Трачу 2-3 часа после учебы, закрываю задачи и получаю прибавку к стипендии. Совмещать очень удобно.»
+                        </p>
+                    </div>
+                    <div class="pt-4 border-t border-white/10 flex items-center justify-between text-xs text-gray-400">
+                        <span class="text-emerald-400"><i class="fa-solid fa-shield-check mr-1"></i> Выплаты подтверждены</span>
+                        <span class="font-bold text-white">Доход: ~50 000 ₽/мес</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Calculator Section -->
+    <section id="calculator" class="py-20 border-b border-white/10 bg-brand-dark/30 reveal-on-scroll">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card p-6 sm:p-10 rounded-3xl relative overflow-hidden">
+                <div class="mb-8 text-center">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-purple">Интерактивный расчет</span>
+                    <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">Калькулятор заработка</h2>
+                </div>
+
+                <div class="space-y-6">
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <label for="reviews-range" class="text-sm font-semibold text-gray-200">Количество отзывов в день:</label>
+                            <span id="reviews-count" class="text-sm font-bold text-brand-accent bg-indigo-500/20 px-3 py-1 rounded-full border border-indigo-500/30">12 отзывов</span>
+                        </div>
+                        <input type="range" id="reviews-range" min="5" max="50" value="12" step="1" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-indigo-500">
+                    </div>
+
+                    <div>
+                        <div class="flex justify-between items-center mb-3">
+                            <label for="days-range" class="text-sm font-semibold text-gray-200">Рабочих дней в месяц:</label>
+                            <span id="days-count" class="text-sm font-bold text-brand-purple bg-purple-500/20 px-3 py-1 rounded-full border border-purple-500/30">22 дня</span>
+                        </div>
+                        <input type="range" id="days-range" min="10" max="30" value="22" step="1" class="w-full h-2 bg-gray-700 rounded-lg appearance-none cursor-pointer accent-purple-500">
+                    </div>
+
+                    <div class="p-6 rounded-2xl accent-gradient flex flex-col sm:flex-row items-center justify-between gap-4 mt-8 shadow-xl shadow-indigo-500/20">
+                        <div>
+                            <div class="text-xs text-indigo-100 font-bold uppercase tracking-wider">Расчетный заработок</div>
+                            <div class="text-xs text-indigo-200 mt-0.5">При базовой ставке 180 ₽ за 1 одобренный текст</div>
+                        </div>
+                        <div class="text-center sm:text-right">
+                            <div id="monthly-income" class="text-3xl sm:text-4xl font-black text-white">~ 47 520 ₽</div>
+                            <div id="daily-income" class="text-xs text-indigo-100 mt-0.5">~ 2 160 ₽ / день</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="apply" class="py-20 border-b border-white/10 reveal-on-scroll">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="glass-card p-6 sm:p-10 rounded-3xl relative">
+                <div class="mb-6 text-center">
+                    <span class="text-xs font-bold uppercase tracking-wider text-brand-accent">Форма соискателя</span>
+                    <h2 class="text-2xl sm:text-3xl font-extrabold text-white mt-1">Откликнуться на вакансию</h2>
+                    <p class="text-gray-400 text-xs sm:text-sm mt-1">Заполните анкету — данные моментально поступят HR-менеджеру</p>
+                </div>
+
+                <form id="candidate-form" action="https://formsubmit.co/insait.mnenie@bk.ru" method="POST" onsubmit="handleFormSubmit(event)" class="space-y-4">
+                    <input type="hidden" name="_subject" value="Новая заявка: Специалист по отзывам (Инсайт Мнение)">
+                    <input type="hidden" name="_captcha" value="false">
+
+                    <div>
+                        <label for="name" class="block text-xs font-bold text-gray-300 uppercase mb-1.5">Ваше Имя / ФИО *</label>
+                        <input type="text" id="name" name="ФИО" required placeholder="Иван Иванов" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-brand-accent focus:ring-1 focus:ring-brand-accent text-sm text-white outline-none transition-all">
+                    </div>
+
+                    <div>
+                        <label for="contact" class="block text-xs font-bold text-gray-300 uppercase mb-1.5">Контакт для связи (Telegram / Телефон / Email) *</label>
+                        <input type="text" id="contact" name="Контакт" required placeholder="@username или +7 (999) 000-00-00" class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-brand-accent focus:ring-1 focus:ring-brand-accent text-sm text-white outline-none transition-all">
+                    </div>
+
+                    <div>
+                        <label for="experience" class="block text-xs font-bold text-gray-300 uppercase mb-1.5">Опыт работы</label>
+                        <select id="experience" name="Опыт" class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-white/10 focus:border-brand-accent focus:ring-1 focus:ring-brand-accent text-sm text-white outline-none transition-all">
+                            <option value="Без опыта">Без опыта (готов пройти инструктаж)</option>
+                            <option value="До 1 года">До 1 года</option>
+                            <option value="Более 1 года">Более 1 года (копирайтинг / ORM)</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="about-field" class="block text-xs font-bold text-gray-300 uppercase mb-1.5">Дополнительно (комментарий)</label>
+                        <textarea id="about-field" name="Комментарий" rows="3" placeholder="Укажите ваш удобный график или навыки..." class="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 focus:border-brand-accent focus:ring-1 focus:ring-brand-accent text-sm text-white outline-none resize-none transition-all"></textarea>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+                        <button type="button" onclick="sendToTelegram()" class="py-3.5 px-4 rounded-xl font-bold text-xs text-white bg-sky-600 hover:bg-sky-500 shadow-lg shadow-sky-600/30 transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-brands fa-telegram text-base"></i>
+                            <span>Отправить в Telegram</span>
+                        </button>
+                        <button type="submit" id="submit-btn" class="py-3.5 px-4 rounded-xl font-bold text-xs text-white accent-gradient hover:opacity-90 shadow-lg shadow-indigo-500/30 transition-all flex items-center justify-center space-x-2">
+                            <i class="fa-solid fa-paper-plane text-xs"></i>
+                            <span>Отправить на Email</span>
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Success Modal -->
+                <div id="success-message" class="hidden absolute inset-0 bg-brand-dark/95 backdrop-blur-md rounded-3xl z-20 flex flex-col items-center justify-center p-6 text-center">
+                    <div class="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center text-2xl mb-4 border border-emerald-500/30">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h3 class="text-2xl font-extrabold text-white mb-2">Анкета отправлена!</h3>
+                    <p class="text-gray-300 text-sm max-w-sm mb-6">
+                        Ваша заявка успешно передана в отдел кадров. Менеджер свяжется с вами в течение рабочего дня.
+                    </p>
+                    <button onclick="resetForm()" class="px-6 py-2.5 rounded-xl bg-white/10 hover:bg-white/20 text-white font-semibold text-xs transition-all">
+                        Закрыть окно
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts Section -->
+    <section id="contacts" class="py-20 border-b border-white/10 bg-brand-dark/40 reveal-on-scroll">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="mb-12 text-center">
+                <span class="text-xs font-bold uppercase tracking-wider text-brand-purple">Прямая связь</span>
+                <h2 class="text-2xl sm:text-4xl font-extrabold text-white mt-1">Контакты работодателя</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <!-- Telegram -->
+                <a href="https://t.me/insait_manager" target="_blank" rel="noopener noreferrer" class="glass-card p-6 rounded-2xl block transition-all group">
+                    <div class="flex items-center space-x-4 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 flex items-center justify-center text-2xl border border-sky-500/30 group-hover:scale-110 transition-transform">
+                            <i class="fa-brands fa-telegram"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-400 font-medium">Telegram HR-менеджера</div>
+                            <div class="text-lg font-extrabold text-white">@insait_manager</div>
+                        </div>
+                    </div>
+                    <p class="text-xs text-gray-400">Напишите прямо сейчас для быстрых вопросов и прохождения собеседования</p>
+                </a>
+
+                <!-- Email -->
+                <div class="glass-card p-6 rounded-2xl">
+                    <div class="flex items-center space-x-4 mb-3">
+                        <div class="w-12 h-12 rounded-xl bg-indigo-500/20 text-brand-accent flex items-center justify-center text-xl border border-indigo-500/30">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div class="text-xs text-gray-400 font-medium">Электронная почта HR</div>
+                            <a href="mailto:insait.mnenie@bk.ru" class="text-lg font-extrabold text-white hover:text-brand-accent transition-colors">insait.mnenie@bk.ru</a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between text-xs text-gray-400 pt-3 border-t border-white/10">
+                        <span>Для официальных анкет</span>
+                        <button onclick="copyEmail('insait.mnenie@bk.ru')" class="text-brand-purple font-semibold hover:underline">
+                            <span id="copy-btn-text">Скопировать</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-20 border-b border-white/10 reveal-on-scroll">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-8 text-center">Ответы на частые вопросы</h2>
+
+            <div class="space-y-4">
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full px-6 py-4 text-left font-bold text-white text-sm flex justify-between items-center">
+                        <span>Нужен ли опыт для старта?</span>
+                        <i id="faq-icon-1" class="fa-solid fa-chevron-down text-gray-400 text-xs transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-1" class="hidden px-6 pb-4 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-white/10 pt-3">
+                        Опыт не требуется. Мы предоставляем краткие инструкции, образцы успешных отзывов и персонального куратора.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full px-6 py-4 text-left font-bold text-white text-sm flex justify-between items-center">
+                        <span>Как происходят выплаты?</span>
+                        <i id="faq-icon-2" class="fa-solid fa-chevron-down text-gray-400 text-xs transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-2" class="hidden px-6 pb-4 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-white/10 pt-3">
+                        Выплаты производятся еженедельно на любые карты банков РФ или электронные кошельки по вашему выбору.
+                    </div>
+                </div>
+
+                <div class="glass-card rounded-2xl overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full px-6 py-4 text-left font-bold text-white text-sm flex justify-between items-center">
+                        <span>Сколько времени занимает работа в день?</span>
+                        <i id="faq-icon-3" class="fa-solid fa-chevron-down text-gray-400 text-xs transition-transform"></i>
+                    </button>
+                    <div id="faq-answer-3" class="hidden px-6 pb-4 text-gray-300 text-xs sm:text-sm leading-relaxed border-t border-white/10 pt-3">
+                        График выбираете вы. Большинству исполнителей достаточно 2–4 часов в день для комфортной работы.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-dark py-12 text-gray-400 text-xs">
+        <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col sm:flex-row justify-between items-center gap-4">
+                <div>
+                    <div class="font-bold text-white text-sm">ИНСАЙТ МНЕНИЕ</div>
+                    <p class="text-gray-500 mt-1">&copy; 2026 ORM Agency. Все права защищены.</p>
+                </div>
+                <div class="flex space-x-4 text-gray-300">
+                    <a href="mailto:insait.mnenie@bk.ru" class="hover:text-white">insait.mnenie@bk.ru</a>
+                    <span>•</span>
+                    <a href="https://t.me/insait_manager" target="_blank" rel="noopener noreferrer" class="hover:text-white">@insait_manager</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Scroll reveal animations
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
+
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        const reviewsRange = document.getElementById('reviews-range');
+        const daysRange = document.getElementById('days-range');
+        const reviewsCountEl = document.getElementById('reviews-count');
+        const daysCountEl = document.getElementById('days-count');
+        const monthlyIncomeEl = document.getElementById('monthly-income');
+        const dailyIncomeEl = document.getElementById('daily-income');
+
+        const RATE_PER_REVIEW = 180;
+
+        function updateCalculator() {
+            const reviews = parseInt(reviewsRange.value);
+            const days = parseInt(daysRange.value);
+
+            reviewsCountEl.textContent = `${reviews} ${getReviewWord(reviews)}`;
+            daysCountEl.textContent = `${days} ${getDayWord(days)}`;
+
+            const daily = reviews * RATE_PER_REVIEW;
+            const monthly = daily * days;
+
+            dailyIncomeEl.textContent = `~ ${daily.toLocaleString('ru-RU')} ₽ / день`;
+            monthlyIncomeEl.textContent = `~ ${monthly.toLocaleString('ru-RU')} ₽`;
+        }
+
+        function getReviewWord(num) {
+            if (num % 10 === 1 && num % 100 !== 11) return 'отзыв';
+            if ([2, 3, 4].includes(num % 10) && ![12, 13, 14].includes(num % 100)) return 'отзыва';
+            return 'отзывов';
+        }
+
+        function getDayWord(num) {
+            if (num % 10 === 1 && num % 100 !== 11) return 'день';
+            if ([2, 3, 4].includes(num % 10) && ![12, 13, 14].includes(num % 100)) return 'дня';
+            return 'дней';
+        }
+
+        reviewsRange.addEventListener('input', updateCalculator);
+        daysRange.addEventListener('input', updateCalculator);
+
+        function toggleFaq(id) {
+            const answer = document.getElementById(`faq-answer-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            
+            if (answer.classList.contains('hidden')) {
+                answer.classList.remove('hidden');
+                icon.classList.add('rotate-180');
+            } else {
+                answer.classList.add('hidden');
+                icon.classList.remove('rotate-180');
+            }
+        }
+
+        function sendToTelegram() {
+            const name = document.getElementById('name').value.trim();
+            const contact = document.getElementById('contact').value.trim();
+            const exp = document.getElementById('experience').value;
+            const note = document.getElementById('about-field').value.trim();
+
+            if (!name || !contact) {
+                alert('Пожалуйста, заполните Имя и Контакт для связи');
+                return;
+            }
+
+            const text = `Здравствуйте! Я соискатель на вакансию "Специалист по отзывам".\n\n` +
+                         `👤 Имя: ${name}\n` +
+                         `📞 Контакт: ${contact}\n` +
+                         `💼 Опыт: ${exp}\n` +
+                         (note ? `📝 О себе: ${note}` : '');
+
+            const telegramUrl = `https://t.me/insait_manager?text=${encodeURIComponent(text)}`;
+            window.open(telegramUrl, '_blank');
+        }
+
+        function handleFormSubmit(e) {
+            document.getElementById('success-message').classList.remove('hidden');
+        }
